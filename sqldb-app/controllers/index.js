@@ -5,4 +5,5 @@ module.exports = {
   postController: require("./postController"),
   likeController: require("./likeController"),
   commentController: require("./commentController"),
+  bankController: require("./bankController"),
 };

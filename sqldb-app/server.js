@@ -11,6 +11,7 @@ let userRoutes = require("./routes/userRoutes");
 let postRoutes = require("./routes/postRoutes");
 let commentRoutes = require("./routes/commentRoutes");
 let likeRoutes = require("./routes/likeRoutes");
+let bankRoutes = require("./routes/bankRoutes");
 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to my MySQL application." });
@@ -22,6 +23,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/comments", commentRoutes);
 app.use("/api/likes", likeRoutes);
+app.use("/api/banks", bankRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port
