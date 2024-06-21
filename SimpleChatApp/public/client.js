@@ -11,7 +11,6 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
   if (input.value) {
     socket.emit("chat message", input.value);
-    //Show message on the screen immediately after pressing "Send" or enter
     createMessage(input.value);
     input.value = "";
   }
